@@ -1,3 +1,7 @@
+# Approval Before Changes
+
+Investigate and explain first. Before modifying any files, describe the proposed changes and wait for my explicit approval. Reporting a bug or asking a question does not authorize a fix. This includes automatic formatting, cleanup, dependency changes, and commands that rewrite files. Read-only inspection is allowed without approval. Keep approved changes strictly within the agreed scope.
+
 <laravel-boost-guidelines>
 === foundation rules ===
 
