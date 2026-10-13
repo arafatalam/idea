@@ -1,10 +1,10 @@
 <?php
 
-//test('the application returns a successful response', function () {
+// test('the application returns a successful response', function () {
 //    $response = $this->get('/');
 //
 //    $response->assertStatus(200);
-//});
+// });
 
 use App\Models\User;
 

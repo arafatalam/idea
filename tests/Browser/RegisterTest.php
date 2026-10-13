@@ -1,10 +1,10 @@
 <?php
 
-//test('the application returns a successful response', function () {
+// test('the application returns a successful response', function () {
 //    $response = $this->get('/');
 //
 //    $response->assertStatus(200);
-//});
+// });
 
 it('registers a user', function () {
     visit('/register')
@@ -18,6 +18,6 @@ it('registers a user', function () {
 
     expect(Auth::user())->toMatchArray([
         'name' => 'John Doe',
-        'email' => 'john@example.com'
+        'email' => 'john@example.com',
     ]);
 });

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -19,7 +21,7 @@ class SessionsController extends Controller
             'password' => ['required', 'string', 'min:8', 'max:255'],
         ]);
 
-        if (!Auth::attempt($attributes)) {
+        if (! Auth::attempt($attributes)) {
             return back()
                 ->withErrors(['password' => 'We are unable to authenticate using the provided credentials'])
                 ->withInput();

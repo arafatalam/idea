@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Models;
 
 use Database\Factories\StepFactory;
@@ -13,9 +15,9 @@ class Step extends Model
     use HasFactory;
 
     protected $attributes = ['completed' => false];
+
     public function idea(): BelongsTo
     {
         return $this->belongsTo(Idea::class);
     }
-
 }
