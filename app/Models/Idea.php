@@ -46,9 +46,10 @@ class Idea extends Model
     {
         return $this->hasMany(Step::class);
     }
+
     public function formattedDescription(): Attribute
     {
-        return Attribute::get(fn($value, $attributes) => str($attributes['description'])->markdown());
+        return Attribute::get(fn ($value, $attributes) => str($attributes['description'])->markdown());
     }
 
     protected function casts(): array
